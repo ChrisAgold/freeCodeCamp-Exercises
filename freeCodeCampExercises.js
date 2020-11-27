@@ -432,7 +432,22 @@ for (var i = 0; i < myArr.length; i++) {
 }
 //console.log(total);
 
+// Modify Array Data With Indexes
+// Modify the data stored at index 0 of myArray to a value of 45.
+var myArray = [18,64,99];
+myArray[0] = 45;
 
+// Access Multi-Dimensional Arrays With Indexes
+//
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+// Only change code below this line
+// Using bracket notation select an element from myArray such that myData is equal to 8.
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+// Only change code below this line
+var myData = myArray[0][0];
+var myData = myArray [2][1];
 
 
 
