@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Basic JavaScript: Use Conditional Logic with If Statements
 //Create an if statement inside the function to return "Yes, that was true" if the parameter wasThatTrue is true and return "No, that was false" otherwise.
 function trueOrFalse(wasThatTrue) {
@@ -22,6 +8,7 @@ function trueOrFalse(wasThatTrue) {
         return "No, that was false";
     }
 }
+
 //console.log(trueOrFalse(true));
 
 // Comparison with the Equality Operator
@@ -38,6 +25,7 @@ function testEqual(val) {
     }
     return "Not Equal";
 }
+
 //console.log(testEqual(10));
 
 // Comparison with the Strict Equality Operator
@@ -48,6 +36,7 @@ function testStrict(val) {
     }
     return "Not Equal";
 }
+
 // console.log(testStrict(10));
 
 // Practice comparing different values
@@ -62,6 +51,7 @@ function compareEquality(a, b) {
     }
     return "Not Equal";
 }
+
 // console.log(compareEquality(10, "10"));
 
 // Comparison with the Inequality Operator
@@ -72,6 +62,7 @@ function testNotEqual(val) {
     }
     return "Equal";
 }
+
 // console.log(testNotEqual(10));
 
 // Comparison with the Strict Inequality Operator
@@ -82,6 +73,7 @@ function testStrictNotEqual(val) {
     }
     return "Equal";
 }
+
 // testStrictNotEqual(10);
 
 // Introducing Else Statements
@@ -93,15 +85,14 @@ function testElse(val) {
 
     if (val > 5) {
         result = "Bigger than 5";
-    }
-
-    else {
+    } else {
         result = "5 or Smaller";
     }
 
     // Only change code above this line
     return result;
 }
+
 // console.log(testElse(4));
 
 // Introducing Else If Statements
@@ -110,15 +101,13 @@ function testElse(val) {
 function testElseIf(val) {
     if (val > 10) {
         return "Greater than 10";
-    }
-
-    else if (val < 5) {
+    } else if (val < 5) {
         return "Smaller than 5";
-    }
-    else {
+    } else {
         return "Between 5 and 10";
     }
 }
+
 //console.log(testElseIf(7));
 
 // Logical Order in If Else Statements
@@ -133,6 +122,7 @@ function orderMyLogic(val) {
         return "Greater than or equal to 10";
     }
 }
+
 //console.log(orderMyLogic(7));
 
 // Chaining If Else Statements
@@ -162,6 +152,7 @@ function testSize(num) {
         // Only change code above this line
     }
 }
+
 // console.log(testSize(7));
 
 // Golf Code
@@ -178,6 +169,7 @@ function testSize(num) {
 // par and strokes will always be numeric and positive. We have added an array of all the names for your convenience.
 
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
 function golfScore(par, strokes) {
     // Only change code below this line
     if (strokes === 1) {
@@ -199,6 +191,7 @@ function golfScore(par, strokes) {
     return "Change Me";
     // Only change code above this line
 }
+
 // console.log(golfScore(5, 4));
 
 //Selecting from Many Options with Switch Statements
@@ -229,6 +222,7 @@ function caseInSwitch(val) {
     // Only change code above this line
     return answer;
 }
+
 // console.log(caseInSwitch(1));
 
 // Adding a Default Option in Switch Statements
@@ -241,7 +235,7 @@ function caseInSwitch(val) {
 function switchOfStuff(val) {
     var answer = "";
     // Only change code below this line
-        switch (val) {
+    switch (val) {
         case "a":
             answer = "apple";
             break;
@@ -253,9 +247,10 @@ function switchOfStuff(val) {
             break;
         default:
             answer = "stuff";
-        }
-            return answer;
     }
+    return answer;
+}
+
 // console.log(switchOfStuff(1));
 
 // Multiple Identical Options in Switch Statements
@@ -288,6 +283,7 @@ function sequentialSizes(val) {
 // Only change code above this line
     return answer;
 }
+
 // console.log(sequentialSizes(1));
 
 // Replacing If Else Chains with Switch
@@ -298,24 +294,25 @@ function chainToSwitch(val) {
     // Only change code below this line
     switch (val) {
         case "bob":
-        answer = "Marley";
-        break;
+            answer = "Marley";
+            break;
         case 42:
-        answer = "The Answer";
-        break;
+            answer = "The Answer";
+            break;
         case 1:
-        answer = "There is no #1";
-        break;
+            answer = "There is no #1";
+            break;
         case 99:
-        answer = "Missed me by this much!";
-        break;
+            answer = "Missed me by this much!";
+            break;
         case 7:
-        answer = "Ate Nine";
+            answer = "Ate Nine";
     }
 
     // Only change code above this line
     return answer;
 }
+
 // console.log(chainToSwitch(7));
 
 // Returning Boolean Values from Functions
@@ -325,6 +322,7 @@ function isLess(a, b) {
     return a < b;
     // Only change code above this line
 }
+
 //console.log(isLess(10, 15));
 
 // Return Early Pattern for Functions
@@ -337,6 +335,7 @@ function abTest(a, b) {
     // Only change code above this line
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
+
 // console.log(abTest(2,2));
 
 // Counting Cards
@@ -365,7 +364,7 @@ function cc(card) {
             count--;
             break;
     }
-var holdbet = 'Hold';
+    var holdbet = 'Hold';
     if (count > 0) {
         holdbet = 'Bet';
     }
@@ -373,16 +372,8 @@ var holdbet = 'Hold';
     return count + " " + holdbet;
     // Only change code above this line
 }
+
 //console.log(cc(2); cc(3); cc(7); cc('K'); cc('A'));
-
-
-
-
-
-
-
-
-
 
 
 // Iterate with JavaScript While Loops
@@ -390,7 +381,7 @@ var holdbet = 'Hold';
 
 var array = [];
 var i = 5;
-while(i >= 0) {
+while (i >= 0) {
     array.push(i);
     i--;
 }
@@ -408,7 +399,7 @@ for (var i = 1; i <= 5; i++) {
 // Iterate Odd Numbers With a For Loop
 // Push the odd numbers from 1 through 9 to myArray using a for loop.
 var myArr = [];
-for (var i = 1; i <= 9; i+=2) {
+for (var i = 1; i <= 9; i += 2) {
     myArr.push(i);
 }
 //console.log(myArr);
@@ -417,7 +408,7 @@ for (var i = 1; i <= 9; i+=2) {
 // Push the odd numbers from 9 through 1 to myArray using a for loop.
 
 var arr = [];
-for (var i = 9; i > 0; i-=2) {
+for (var i = 9; i > 0; i -= 2) {
     arr.push(i);
 }
 //console.log(arr);
@@ -425,7 +416,7 @@ for (var i = 9; i > 0; i-=2) {
 // Iterate Through an Array with a For Loop
 // Declare and initialize a variable total to 0. Use a for loop to add the value of each element of the myArr array to total.
 // Adding everything in Array
-var myArr = [ 2, 3, 4, 5, 6];
+var myArr = [2, 3, 4, 5, 6];
 var total = 0;
 for (var i = 0; i < myArr.length; i++) {
     total += myArr[i];
@@ -434,16 +425,16 @@ for (var i = 0; i < myArr.length; i++) {
 
 // Modify Array Data With Indexes
 // Modify the data stored at index 0 of myArray to a value of 45.
-var myArray = [18,64,99];
+var myArray = [18, 64, 99];
 myArray[0] = 45;
 
 // Access Multi-Dimensional Arrays With Indexes
 //
-var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
 
 // Only change code below this line
 // Using bracket notation select an element from myArray such that myData is equal to 8.
-var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
 
 // Only change code below this line
 var myData = myArray[0][0];
@@ -456,7 +447,21 @@ var myArray = [["John", 23], ["cat", 2]];
 // Only change code below this line
 myArray.push(['dog', 3]);
 
+// Nesting For Loops
+// If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:
+// Modify function multiplyAll so that it returns the product of all the numbers in the sub-arrays of arr.
+function multiplyAll(arr) {
+    var product = 1;
 
+    for (var i=0; i < arr.length; i++) {
+        for (var j=0; j < arr[i].length; j++) {
+            product *= arr[i][j];
+        }
+    }
+
+    return product;
+}
+multiplyAll([[1,2],[3,4],[5,6,7]]);
 
 
 
